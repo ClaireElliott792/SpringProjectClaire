@@ -54,10 +54,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/petersampson/SpringProject
+CMAKE_SOURCE_DIR = /Users/petersampson/SpringProjectClaire
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/petersampson/SpringProject/build
+CMAKE_BINARY_DIR = /Users/petersampson/SpringProjectClaire/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -82,14 +82,14 @@ clean: CMakeFiles/SpringProject_autogen.dir/clean
 CMakeFiles/SpringProject.dir/all: CMakeFiles/SpringProject_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpringProject.dir/build.make CMakeFiles/SpringProject.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpringProject.dir/build.make CMakeFiles/SpringProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/petersampson/SpringProject/build/CMakeFiles --progress-num=1,2,3,4 "Built target SpringProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/petersampson/SpringProjectClaire/build/CMakeFiles --progress-num=1,2,3,4 "Built target SpringProject"
 .PHONY : CMakeFiles/SpringProject.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SpringProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/petersampson/SpringProject/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/petersampson/SpringProjectClaire/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SpringProject.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/petersampson/SpringProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/petersampson/SpringProjectClaire/build/CMakeFiles 0
 .PHONY : CMakeFiles/SpringProject.dir/rule
 
 # Convenience name for target.
@@ -108,14 +108,14 @@ CMakeFiles/SpringProject.dir/clean:
 CMakeFiles/SpringProject_autogen.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpringProject_autogen.dir/build.make CMakeFiles/SpringProject_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpringProject_autogen.dir/build.make CMakeFiles/SpringProject_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/petersampson/SpringProject/build/CMakeFiles --progress-num=5 "Built target SpringProject_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/petersampson/SpringProjectClaire/build/CMakeFiles --progress-num=5 "Built target SpringProject_autogen"
 .PHONY : CMakeFiles/SpringProject_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SpringProject_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/petersampson/SpringProject/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/petersampson/SpringProjectClaire/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SpringProject_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/petersampson/SpringProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/petersampson/SpringProjectClaire/build/CMakeFiles 0
 .PHONY : CMakeFiles/SpringProject_autogen.dir/rule
 
 # Convenience name for target.

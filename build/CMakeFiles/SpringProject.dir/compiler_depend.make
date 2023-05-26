@@ -3,7 +3,7 @@
 
 CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o: SpringProject_autogen/mocs_compilation.cpp
 
-CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o: /Users/petersampson/SpringProject/src/NGLScene.cpp \
+CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o: /Users/petersampson/SpringProjectClaire/src/NGLScene.cpp \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/QMouseEvent \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qevent.h \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qtguiglobal.h \
@@ -523,7 +523,7 @@ CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o: /Users/petersampson/SpringProje
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qinputmethod.h \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qlocale.h \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qguiapplication_platform.h \
-  /Users/petersampson/SpringProject/include/NGLScene.h \
+  /Users/petersampson/SpringProjectClaire/include/NGLScene.h \
   /Users/petersampson/NGL/include/ngl/Transformation.h \
   /Users/petersampson/NGL/include/ngl/Mat4.h \
   /Users/petersampson/NGL/include/ngl/Types.h \
@@ -691,7 +691,7 @@ CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o: /Users/petersampson/SpringProje
   /Users/petersampson/NGL/include/ngl/Util.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream
 
-CMakeFiles/SpringProject.dir/src/main.cpp.o: /Users/petersampson/SpringProject/src/main.cpp \
+CMakeFiles/SpringProject.dir/src/main.cpp.o: /Users/petersampson/SpringProjectClaire/src/main.cpp \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/QGuiApplication \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qguiapplication.h \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qtguiglobal.h \
@@ -1242,7 +1242,7 @@ CMakeFiles/SpringProject.dir/src/main.cpp.o: /Users/petersampson/SpringProject/s
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/petersampson/SpringProject/include/NGLScene.h \
+  /Users/petersampson/SpringProjectClaire/include/NGLScene.h \
   /Users/petersampson/NGL/include/ngl/Transformation.h \
   /Users/petersampson/NGL/include/ngl/Mat4.h \
   /Users/petersampson/NGL/include/ngl/Types.h \
@@ -1356,8 +1356,6 @@ CMakeFiles/SpringProject.dir/src/main.cpp.o: /Users/petersampson/SpringProject/s
   /Users/petersampson/Qt/6.5.0/macos/lib/QtCore.framework/Headers/QSet
 
 
-/Users/petersampson/SpringProject/src/main.cpp:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream:
 
 /Users/petersampson/NGL/include/ngl/Util.h:
@@ -1462,6 +1460,8 @@ CMakeFiles/SpringProject.dir/src/main.cpp.o: /Users/petersampson/SpringProject/s
 
 /Users/petersampson/NGL/include/ngl/AbstractVAO.h:
 
+/Users/petersampson/SpringProjectClaire/src/main.cpp:
+
 /Users/petersampson/NGL/include/ngl/Text.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iomanip:
@@ -1536,7 +1536,7 @@ CMakeFiles/SpringProject.dir/src/main.cpp.o: /Users/petersampson/SpringProject/s
 
 /Users/petersampson/NGL/include/ngl/Transformation.h:
 
-/Users/petersampson/SpringProject/include/NGLScene.h:
+/Users/petersampson/SpringProjectClaire/include/NGLScene.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_blkcnt_t.h:
 
@@ -1917,6 +1917,8 @@ CMakeFiles/SpringProject.dir/src/main.cpp.o: /Users/petersampson/SpringProject/s
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath:
 
 /Users/petersampson/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qminmax.h:
+
+/Users/petersampson/SpringProjectClaire/src/NGLScene.cpp:
 
 /Users/petersampson/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qmalloc.h:
 
@@ -2622,8 +2624,6 @@ CMakeFiles/SpringProject.dir/src/main.cpp.o: /Users/petersampson/SpringProject/s
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wchar.h:
 
-/Users/petersampson/SpringProject/src/NGLScene.cpp:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/is_partitioned.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__locale:
@@ -2688,27 +2688,15 @@ SpringProject_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/partition.h:
 
-/Users/petersampson/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qlist.h:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stddef.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__mutex_base:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/readable_traits.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/typeinfo:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
+/Users/petersampson/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qlist.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__threading_support:
-
-/Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qpixelformat.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_symbol_aliasing.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_nlink_t.h:
-
-/Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qtguiglobal.h:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stddef.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint64_t.h:
 
@@ -2733,3 +2721,15 @@ SpringProject_autogen/mocs_compilation.cpp:
 /Users/petersampson/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qnamespace.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/common_iterator.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__threading_support:
+
+/Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qpixelformat.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_symbol_aliasing.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_nlink_t.h:
+
+/Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qtguiglobal.h:

@@ -1,5 +1,5 @@
 CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o: \
-  /Users/petersampson/SpringProject/src/NGLScene.cpp \
+  /Users/petersampson/SpringProjectClaire/src/NGLScene.cpp \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/QMouseEvent \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qevent.h \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qtguiglobal.h \
@@ -519,7 +519,7 @@ CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o: \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qinputmethod.h \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qlocale.h \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qguiapplication_platform.h \
-  /Users/petersampson/SpringProject/include/NGLScene.h \
+  /Users/petersampson/SpringProjectClaire/include/NGLScene.h \
   /Users/petersampson/NGL/include/ngl/Transformation.h \
   /Users/petersampson/NGL/include/ngl/Mat4.h \
   /Users/petersampson/NGL/include/ngl/Types.h \

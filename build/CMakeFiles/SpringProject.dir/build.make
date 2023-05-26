@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/petersampson/SpringProject
+CMAKE_SOURCE_DIR = /Users/petersampson/SpringProjectClaire
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/petersampson/SpringProject/build
+CMAKE_BINARY_DIR = /Users/petersampson/SpringProjectClaire/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SpringProject.dir/depend.make
@@ -72,44 +72,44 @@ include CMakeFiles/SpringProject.dir/flags.make
 CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o: CMakeFiles/SpringProject.dir/flags.make
 CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o: SpringProject_autogen/mocs_compilation.cpp
 CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o: CMakeFiles/SpringProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/petersampson/SpringProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o -MF CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o -c /Users/petersampson/SpringProject/build/SpringProject_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/petersampson/SpringProjectClaire/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o -MF CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o -c /Users/petersampson/SpringProjectClaire/build/SpringProject_autogen/mocs_compilation.cpp
 
 CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/petersampson/SpringProject/build/SpringProject_autogen/mocs_compilation.cpp > CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/petersampson/SpringProjectClaire/build/SpringProject_autogen/mocs_compilation.cpp > CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/petersampson/SpringProject/build/SpringProject_autogen/mocs_compilation.cpp -o CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/petersampson/SpringProjectClaire/build/SpringProject_autogen/mocs_compilation.cpp -o CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/SpringProject.dir/src/main.cpp.o: CMakeFiles/SpringProject.dir/flags.make
-CMakeFiles/SpringProject.dir/src/main.cpp.o: /Users/petersampson/SpringProject/src/main.cpp
+CMakeFiles/SpringProject.dir/src/main.cpp.o: /Users/petersampson/SpringProjectClaire/src/main.cpp
 CMakeFiles/SpringProject.dir/src/main.cpp.o: CMakeFiles/SpringProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/petersampson/SpringProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SpringProject.dir/src/main.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpringProject.dir/src/main.cpp.o -MF CMakeFiles/SpringProject.dir/src/main.cpp.o.d -o CMakeFiles/SpringProject.dir/src/main.cpp.o -c /Users/petersampson/SpringProject/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/petersampson/SpringProjectClaire/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SpringProject.dir/src/main.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpringProject.dir/src/main.cpp.o -MF CMakeFiles/SpringProject.dir/src/main.cpp.o.d -o CMakeFiles/SpringProject.dir/src/main.cpp.o -c /Users/petersampson/SpringProjectClaire/src/main.cpp
 
 CMakeFiles/SpringProject.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpringProject.dir/src/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/petersampson/SpringProject/src/main.cpp > CMakeFiles/SpringProject.dir/src/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/petersampson/SpringProjectClaire/src/main.cpp > CMakeFiles/SpringProject.dir/src/main.cpp.i
 
 CMakeFiles/SpringProject.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpringProject.dir/src/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/petersampson/SpringProject/src/main.cpp -o CMakeFiles/SpringProject.dir/src/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/petersampson/SpringProjectClaire/src/main.cpp -o CMakeFiles/SpringProject.dir/src/main.cpp.s
 
 CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o: CMakeFiles/SpringProject.dir/flags.make
-CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o: /Users/petersampson/SpringProject/src/NGLScene.cpp
+CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o: /Users/petersampson/SpringProjectClaire/src/NGLScene.cpp
 CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o: CMakeFiles/SpringProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/petersampson/SpringProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o -MF CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o.d -o CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o -c /Users/petersampson/SpringProject/src/NGLScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/petersampson/SpringProjectClaire/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o -MF CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o.d -o CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o -c /Users/petersampson/SpringProjectClaire/src/NGLScene.cpp
 
 CMakeFiles/SpringProject.dir/src/NGLScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpringProject.dir/src/NGLScene.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/petersampson/SpringProject/src/NGLScene.cpp > CMakeFiles/SpringProject.dir/src/NGLScene.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/petersampson/SpringProjectClaire/src/NGLScene.cpp > CMakeFiles/SpringProject.dir/src/NGLScene.cpp.i
 
 CMakeFiles/SpringProject.dir/src/NGLScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpringProject.dir/src/NGLScene.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/petersampson/SpringProject/src/NGLScene.cpp -o CMakeFiles/SpringProject.dir/src/NGLScene.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/petersampson/SpringProjectClaire/src/NGLScene.cpp -o CMakeFiles/SpringProject.dir/src/NGLScene.cpp.s
 
 # Object files for target SpringProject
 SpringProject_OBJECTS = \
@@ -139,7 +139,7 @@ SpringProject: /Users/petersampson/Qt/6.5.0/macos/lib/QtOpenGL.framework/Version
 SpringProject: /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/QtGui
 SpringProject: /Users/petersampson/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/QtCore
 SpringProject: CMakeFiles/SpringProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/petersampson/SpringProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable SpringProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/petersampson/SpringProjectClaire/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable SpringProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SpringProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -151,6 +151,6 @@ CMakeFiles/SpringProject.dir/clean:
 .PHONY : CMakeFiles/SpringProject.dir/clean
 
 CMakeFiles/SpringProject.dir/depend:
-	cd /Users/petersampson/SpringProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/petersampson/SpringProject /Users/petersampson/SpringProject /Users/petersampson/SpringProject/build /Users/petersampson/SpringProject/build /Users/petersampson/SpringProject/build/CMakeFiles/SpringProject.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/petersampson/SpringProjectClaire/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/petersampson/SpringProjectClaire /Users/petersampson/SpringProjectClaire /Users/petersampson/SpringProjectClaire/build /Users/petersampson/SpringProjectClaire/build /Users/petersampson/SpringProjectClaire/build/CMakeFiles/SpringProject.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SpringProject.dir/depend
 

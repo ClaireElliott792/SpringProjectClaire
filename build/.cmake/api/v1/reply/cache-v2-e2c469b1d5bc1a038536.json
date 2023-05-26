@@ -179,7 +179,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/petersampson/SpringProject/build"
+			"value" : "/Users/petersampson/SpringProjectClaire/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -615,7 +615,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/petersampson/SpringProject/build/CMakeFiles/pkgRedirects"
+			"value" : "/Users/petersampson/SpringProjectClaire/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -687,7 +687,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/petersampson/SpringProject"
+			"value" : "/Users/petersampson/SpringProjectClaire"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -6299,7 +6299,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/petersampson/SpringProject/build"
+			"value" : "/Users/petersampson/SpringProjectClaire/build"
 		},
 		{
 			"name" : "SpringProject_IS_TOP_LEVEL",
@@ -6323,7 +6323,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/petersampson/SpringProject"
+			"value" : "/Users/petersampson/SpringProjectClaire"
 		},
 		{
 			"name" : "VCPKG_APPLOCAL_DEPS",

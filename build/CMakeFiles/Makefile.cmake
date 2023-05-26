@@ -334,7 +334,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/petersampson/Qt/6.5.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake"
   "/Users/petersampson/Qt/6.5.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake"
   "/Users/petersampson/Qt/6.5.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake"
-  "/Users/petersampson/SpringProject/CMakeLists.txt"
+  "/Users/petersampson/SpringProjectClaire/CMakeLists.txt"
   "CMakeFiles/3.26.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.3/CMakeSystem.cmake"

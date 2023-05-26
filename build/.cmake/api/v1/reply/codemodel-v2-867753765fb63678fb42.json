@@ -41,7 +41,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SpringProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SpringProject-Debug-654b2c421c6260b24ff0.json",
+					"jsonFile" : "target-SpringProject-Debug-1a4b4c537f3498e814c3.json",
 					"name" : "SpringProject",
 					"projectIndex" : 0
 				},
@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/petersampson/SpringProject/build",
-		"source" : "/Users/petersampson/SpringProject"
+		"build" : "/Users/petersampson/SpringProjectClaire/build",
+		"source" : "/Users/petersampson/SpringProjectClaire"
 	},
 	"version" : 
 	{

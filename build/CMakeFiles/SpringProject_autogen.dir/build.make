@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/petersampson/SpringProject
+CMAKE_SOURCE_DIR = /Users/petersampson/SpringProjectClaire
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/petersampson/SpringProject/build
+CMAKE_BINARY_DIR = /Users/petersampson/SpringProjectClaire/build
 
 # Utility rule file for SpringProject_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/SpringProject_autogen.dir/compiler_depend.make
 include CMakeFiles/SpringProject_autogen.dir/progress.make
 
 CMakeFiles/SpringProject_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/petersampson/SpringProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target SpringProject"
-	/Applications/CMake.app/Contents/bin/cmake -E cmake_autogen /Users/petersampson/SpringProject/build/CMakeFiles/SpringProject_autogen.dir/AutogenInfo.json Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/petersampson/SpringProjectClaire/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target SpringProject"
+	/Applications/CMake.app/Contents/bin/cmake -E cmake_autogen /Users/petersampson/SpringProjectClaire/build/CMakeFiles/SpringProject_autogen.dir/AutogenInfo.json Debug
 
 SpringProject_autogen: CMakeFiles/SpringProject_autogen
 SpringProject_autogen: CMakeFiles/SpringProject_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/SpringProject_autogen.dir/clean:
 .PHONY : CMakeFiles/SpringProject_autogen.dir/clean
 
 CMakeFiles/SpringProject_autogen.dir/depend:
-	cd /Users/petersampson/SpringProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/petersampson/SpringProject /Users/petersampson/SpringProject /Users/petersampson/SpringProject/build /Users/petersampson/SpringProject/build /Users/petersampson/SpringProject/build/CMakeFiles/SpringProject_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/petersampson/SpringProjectClaire/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/petersampson/SpringProjectClaire /Users/petersampson/SpringProjectClaire /Users/petersampson/SpringProjectClaire/build /Users/petersampson/SpringProjectClaire/build /Users/petersampson/SpringProjectClaire/build/CMakeFiles/SpringProject_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SpringProject_autogen.dir/depend
 

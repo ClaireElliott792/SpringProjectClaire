@@ -1,5 +1,5 @@
 CMakeFiles/SpringProject.dir/src/main.cpp.o: \
-  /Users/petersampson/SpringProject/src/main.cpp \
+  /Users/petersampson/SpringProjectClaire/src/main.cpp \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/QGuiApplication \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qguiapplication.h \
   /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qtguiglobal.h \
@@ -550,7 +550,7 @@ CMakeFiles/SpringProject.dir/src/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/petersampson/SpringProject/include/NGLScene.h \
+  /Users/petersampson/SpringProjectClaire/include/NGLScene.h \
   /Users/petersampson/NGL/include/ngl/Transformation.h \
   /Users/petersampson/NGL/include/ngl/Mat4.h \
   /Users/petersampson/NGL/include/ngl/Types.h \
