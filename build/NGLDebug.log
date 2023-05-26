@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------------
+[01:30PM] NGL configured with 
+[01:30PM] OpenGL 4.1 INTEL-18.8.6
+[01:30PM] GLSL version 4.10
+-------------------------------------------------------------------------------
+[01:30PM] creating empty ShaderProgram nglTextShader
+[01:30PM] just attached nglTextVertex to ngl::ShaderLib
+[01:30PM] just attached nglTextFragment to ngl::ShaderLib
+[01:30PM] Compiling Shader nglTextVertex
+[01:30PM] Compiling Shader nglTextFragment
+[01:30PM] nglTextVertex attached to program
+[01:30PM] nglTextFragment attached to program
+[01:30PM] Linking nglTextShader
+[01:30PM] linking Shader nglTextShader 
+WARNING: Could not find vertex shader attribute 'inUV' to match BindAttributeLocation request.
+
+FOUND UNIFORM BLOCKS 0
+FOUND UNIFORM BLOCKS 0
+[01:30PM] creating empty ShaderProgram nglColourShader
+[01:30PM] just attached nglColourVertex to ngl::ShaderLib
+[01:30PM] just attached nglColourFragment to ngl::ShaderLib
+[01:30PM] Compiling Shader nglColourVertex
+[01:30PM] Compiling Shader nglColourFragment
+[01:30PM] nglColourVertex attached to program
+[01:30PM] nglColourFragment attached to program
+[01:30PM] Linking nglColourShader
+[01:30PM] linking Shader nglColourShader 
+FOUND UNIFORM BLOCKS 0
+FOUND UNIFORM BLOCKS 0
+[01:30PM] creating empty ShaderProgram nglDiffuseShader
+[01:30PM] just attached nglDiffuseVertex to ngl::ShaderLib
+[01:30PM] just attached nglDiffuseFragment to ngl::ShaderLib
+[01:30PM] Compiling Shader nglDiffuseVertex
+[01:30PM] Compiling Shader nglDiffuseFragment
+[01:30PM] nglDiffuseVertex attached to program
+[01:30PM] nglDiffuseFragment attached to program
+[01:30PM] Linking nglDiffuseShader
+[01:30PM] linking Shader nglDiffuseShader 
+FOUND UNIFORM BLOCKS 0
+FOUND UNIFORM BLOCKS 0
+[01:30PM] creating empty ShaderProgram nglCheckerShader
+[01:30PM] just attached nglCheckerVertex to ngl::ShaderLib
+[01:30PM] just attached nglCheckerFragment to ngl::ShaderLib
+[01:30PM] Compiling Shader nglCheckerVertex
+[01:30PM] Compiling Shader nglCheckerFragment
+[01:30PM] nglCheckerVertex attached to program
+[01:30PM] nglCheckerFragment attached to program
+[01:30PM] Linking nglCheckerShader
+[01:30PM] linking Shader nglCheckerShader 
+FOUND UNIFORM BLOCKS 0
+FOUND UNIFORM BLOCKS 0

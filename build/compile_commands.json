@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/petersampson/SpringProject/build",
+  "command": "/usr/bin/clang++ -DADDLARGEMODELS -DGLM_ENABLE_EXPERIMENTAL -DGL_DO_NOT_WARN_IF_MULTI_GL_VERSION_HEADERS_INCLUDED -DGL_SILENCE_DEPRECATION -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/Users/petersampson/SpringProject/build/SpringProject_autogen/include -I/Users/petersampson/SpringProject/include -I/Users/petersampson/NGL/include -isystem /Users/petersampson/vcpkg/installed/x64-osx/include -isystem /Users/petersampson/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -iframework /Users/petersampson/Qt/6.5.0/macos/lib -isystem /Users/petersampson/Qt/6.5.0/macos/lib/QtCore.framework/Headers -isystem /Users/petersampson/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/petersampson/Qt/6.5.0/macos/include -isystem /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers -isystem /Users/petersampson/Qt/6.5.0/macos/lib/QtOpenGL.framework/Headers -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -o CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o -c /Users/petersampson/SpringProject/build/SpringProject_autogen/mocs_compilation.cpp",
+  "file": "/Users/petersampson/SpringProject/build/SpringProject_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/SpringProject.dir/SpringProject_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/Users/petersampson/SpringProject/build",
+  "command": "/usr/bin/clang++ -DADDLARGEMODELS -DGLM_ENABLE_EXPERIMENTAL -DGL_DO_NOT_WARN_IF_MULTI_GL_VERSION_HEADERS_INCLUDED -DGL_SILENCE_DEPRECATION -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/Users/petersampson/SpringProject/build/SpringProject_autogen/include -I/Users/petersampson/SpringProject/include -I/Users/petersampson/NGL/include -isystem /Users/petersampson/vcpkg/installed/x64-osx/include -isystem /Users/petersampson/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -iframework /Users/petersampson/Qt/6.5.0/macos/lib -isystem /Users/petersampson/Qt/6.5.0/macos/lib/QtCore.framework/Headers -isystem /Users/petersampson/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/petersampson/Qt/6.5.0/macos/include -isystem /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers -isystem /Users/petersampson/Qt/6.5.0/macos/lib/QtOpenGL.framework/Headers -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -o CMakeFiles/SpringProject.dir/src/main.cpp.o -c /Users/petersampson/SpringProject/src/main.cpp",
+  "file": "/Users/petersampson/SpringProject/src/main.cpp",
+  "output": "CMakeFiles/SpringProject.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/petersampson/SpringProject/build",
+  "command": "/usr/bin/clang++ -DADDLARGEMODELS -DGLM_ENABLE_EXPERIMENTAL -DGL_DO_NOT_WARN_IF_MULTI_GL_VERSION_HEADERS_INCLUDED -DGL_SILENCE_DEPRECATION -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/Users/petersampson/SpringProject/build/SpringProject_autogen/include -I/Users/petersampson/SpringProject/include -I/Users/petersampson/NGL/include -isystem /Users/petersampson/vcpkg/installed/x64-osx/include -isystem /Users/petersampson/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -iframework /Users/petersampson/Qt/6.5.0/macos/lib -isystem /Users/petersampson/Qt/6.5.0/macos/lib/QtCore.framework/Headers -isystem /Users/petersampson/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/petersampson/Qt/6.5.0/macos/include -isystem /Users/petersampson/Qt/6.5.0/macos/lib/QtGui.framework/Headers -isystem /Users/petersampson/Qt/6.5.0/macos/lib/QtOpenGL.framework/Headers -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -o CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o -c /Users/petersampson/SpringProject/src/NGLScene.cpp",
+  "file": "/Users/petersampson/SpringProject/src/NGLScene.cpp",
+  "output": "CMakeFiles/SpringProject.dir/src/NGLScene.cpp.o"
+}
+]
