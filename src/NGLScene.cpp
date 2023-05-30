@@ -57,6 +57,7 @@ void NGLScene::initializeGL()
 
   //ground
   b2BodyDef groundBodyDef;
+  groundBodyDef.angularDamping = 0.3f;
   groundBodyDef.position.Set(0.0f, -20.0f);
   b2Body *groundBody = m_world->CreateBody(&groundBodyDef);
   b2PolygonShape groundBox;
@@ -86,13 +87,13 @@ void NGLScene::initializeGL()
   m_body->SetFixedRotation(false);
 
   b2CircleShape dynamicBox;
-  dynamicBox.m_p.Set(1.0f, 1.0f);
-  dynamicBox.m_radius = 1.0f;
+  // dynamicBox.m_p.Set(1.0f, 1.0f);
+  dynamicBox.m_radius = 0.5f;
   b2FixtureDef fixtureDef;
   fixtureDef.shape = &dynamicBox;
-  fixtureDef.density = 1.5f;
-  fixtureDef.friction = 1.3f;
-  fixtureDef.restitution = 0.1f;
+  fixtureDef.density = 0.3f;
+  fixtureDef.friction = 0.3f;
+  fixtureDef.restitution = 0.7f;
   m_body->CreateFixture(&fixtureDef);
 
   startTimer(10);
@@ -119,7 +120,7 @@ void NGLScene::paintGL()
   m_transform.reset();
   {
     ngl::ShaderLib::setUniform("Colour", 0.0f, 1.0f, 0.0f, 1.0f);
-    m_transform.setScale(80.0, 2.0, 0.1);
+    m_transform.setScale(80.0, 3.0, 0.1);
     m_transform.setPosition(0, -20, 0);
     loadMatricesToShader();
     ngl::VAOPrimitives::draw("cube");
@@ -142,7 +143,7 @@ void NGLScene::paintGL()
     b2Vec2 position = m_body->GetPosition();
 
     ngl::ShaderLib::setUniform("Colour", 1.0f, 0.0f, 0.0f, 1.0f);
-    m_transform.setScale(0.5f, 0.5f, 0.1f);
+    // m_transform.setScale(1.0f, 1.0f, 0.1f);
     m_transform.setPosition(position.x, position.y, 0);
     m_transform.setRotation(0, 0, 0);
     loadMatricesToShader();
