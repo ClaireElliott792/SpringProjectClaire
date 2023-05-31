@@ -1,3 +1,5 @@
+// Box2D Docuemntation, 'A 2D Physics Engine for Games', accessed on May 2023. https://box2d.org/documentation/ [online] 
+
 #include <QMouseEvent>
 #include <QGuiApplication>
 #include "NGLScene.h"
@@ -7,11 +9,14 @@
 #include <ngl/ShaderLib.h>
 #include <iostream>
 
-float angle;
+#define ballY -15.5f
+#define ballX -36.5f
+#define springCenterX 38
+#define springCenterY 17
+#define angleChange 0.01
+#define springLength 12
 
-short CATEGORY_GROUND = 0x0001;
-short CATEGORY_SPRING = 0x0002;
-short CATEGORY_BALL = 0x0004;
+float angle;
 
 NGLScene::NGLScene()
 {
@@ -50,7 +55,7 @@ void NGLScene::initializeGL()
   b2Vec2 gravity(0.0f, -20.0f);
   m_world.reset(new b2World(gravity));
 
-  //ground
+  // create ground object
   b2BodyDef groundBodyDef;
   groundBodyDef.angularDamping = 0.3f;
   groundBodyDef.position.Set(0.0f, -20.0f);
@@ -59,29 +64,30 @@ void NGLScene::initializeGL()
   groundBox.SetAsBox(80.0f, 2.0f);
   groundBody->CreateFixture(&groundBox, 0.0f);
 
-  // spring
+  // create spring object
   b2BodyDef springDef;
   springDef.type = b2_dynamicBody;
   springDef.position.Set(-38.0f, -17.0f);
   m_spring = m_world->CreateBody(&springDef);
   m_spring->SetFixedRotation(false);
-
-
   b2PolygonShape dynamicSpring;
-  dynamicSpring.SetAsBox(12.0f, 2.0f);
+  dynamicSpring.SetAsBox(springLength, 2.0f);
   b2FixtureDef fixtureDef1;
   fixtureDef1.shape = &dynamicSpring;
-  // fixtureDef1.filter.categoryBits = CATEGORY_SPRING;
+  // The following section is from :-
+  // Ribon, A. (July 2011) 'Box2D Tutorial: Collision filtering', 'Aurelien Ribon's Dev Blog. [online]
+  // Accessed [2023]
+  // Available from https://aurelienribon.wordpress.com/2011/07/01/box2d-tutorial-collision-filtering/
   fixtureDef1.filter.maskBits = 0;
+  // End citation
   m_spring->CreateFixture(&fixtureDef1);
   
-
   angle = 45 * 0.0174533;
 
-  // ball 
+  // create ball object
   b2BodyDef bodyDef;
   bodyDef.type = b2_dynamicBody;
-  bodyDef.position.Set(-36.5f, -15.5f);
+  bodyDef.position.Set(ballX, ballY);
   m_body = m_world->CreateBody(&bodyDef);
   m_body->SetLinearDamping(0.1f);
   m_body->SetAngularVelocity(0);
@@ -130,7 +136,7 @@ void NGLScene::paintGL()
     b2Vec2 position = m_spring->GetPosition();
 
     ngl::ShaderLib::setUniform("Colour", 1.0f, 1.0f, 0.0f, 0.0f);
-    m_transform.setScale(12.0, 2, 0.1);
+    m_transform.setScale(springLength, 2, 0.1);
     m_transform.setPosition(position.x, position.y, 0);
     m_transform.setRotation(0, 0, (angle*57.2958));
     loadMatricesToShader();
@@ -143,7 +149,6 @@ void NGLScene::paintGL()
     b2Vec2 position = m_body->GetPosition();
 
     ngl::ShaderLib::setUniform("Colour", 1.0f, 0.0f, 0.0f, 1.0f);
-    // m_transform.setScale(1.0f, 1.0f, 0.1f);
     m_transform.setPosition(position.x, position.y, 0);
     m_transform.setRotation(0, 0, 0);
     loadMatricesToShader();
@@ -183,6 +188,7 @@ void NGLScene::keyPressEvent(QKeyEvent *_event)
   float spring_compression;
   float x_force;
   float y_force;
+  float x_max;
 
   switch (_event->key())
   {
@@ -191,72 +197,56 @@ void NGLScene::keyPressEvent(QKeyEvent *_event)
     QGuiApplication::exit(EXIT_SUCCESS);
     break;
   case Qt::Key_Left:
-    angle = angle + 0.01;
-
-    x_dist = m_body->GetPosition().x + 38;
-    y_dist = m_body->GetPosition().y + 17;
-
+    if (angle > 1.57)
+      break;
+    angle = angle + angleChange;
+    x_dist = m_body->GetPosition().x + springCenterX;
+    y_dist = m_body->GetPosition().y + springCenterY;
     hypothenuse = sqrt((y_dist * y_dist) + (x_dist * x_dist));
-
-    x = -38 + (cos(angle)*hypothenuse);
-    y = -17 + (sin(angle)*hypothenuse);
-
+    x = -springCenterX + (cos(angle)*hypothenuse);
+    y = -springCenterY + (sin(angle)*hypothenuse);
     m_body->SetTransform(b2Vec2(x, y), 0);
     m_spring->SetTransform(m_spring->GetPosition(), angle);
-
     break;
   case Qt::Key_Right:
     if (angle < 0)
     break;
-
-    angle = angle - 0.01;
-
-    x_dist = m_body->GetPosition().x + 38;
-    y_dist = m_body->GetPosition().y + 17;
-
+    angle = angle - angleChange;
+    x_dist = m_body->GetPosition().x + springCenterX;
+    y_dist = m_body->GetPosition().y + springCenterY;
     hypothenuse = sqrt((y_dist * y_dist) + (x_dist * x_dist));
-
     x = -38 + (cos(angle)*hypothenuse);
     y = -17 + (sin(angle)*hypothenuse);
-
     m_body->SetTransform(b2Vec2(x, y), 0);
-
     m_spring->SetTransform(m_spring->GetPosition(), angle);
     break;
   case Qt::Key_Up:
     x = m_body->GetPosition().x + fabs(0.1 * cos(angle));
     y = m_body->GetPosition().y + fabs(0.1 * sin(angle));
-    if (y < -12)
+    x_max = sin(angle)*(springLength/2);
+    if (y <= x_max - springCenterY - 0.1)
       m_body->SetTransform(b2Vec2(x, y), angle);
     break;
   case Qt::Key_Down:
     x = m_body->GetPosition().x - fabs(0.1 * cos(angle));
     y = m_body->GetPosition().y - fabs(0.1 * sin(angle));
-    if (y > -15.5)
-      m_body->SetTransform(b2Vec2(x, y), angle);
+    if (y >= (springCenterY+0.1) * -1)
+      if  (x >= (springCenterX+0.1)  * -1)
+        m_body->SetTransform(b2Vec2(x, y), angle);
     break;
-  // show full screen
   case Qt::Key_F:
     showFullScreen();
     break;
-
   case Qt::Key_P:
     spring_compression = fabs(m_body->GetPosition().y + 12);
-
-    x_force = spring_compression * cos(angle) * 10;
-    y_force = spring_compression * sin(angle) * 10;
-
+    x_force = spring_compression * cos(angle) * 8;
+    y_force = spring_compression * sin(angle) * 8;
     m_body->SetLinearVelocity(b2Vec2(x_force, y_force));
-
     startTimer(10);
   break;
-
   default:
     break;
   }
-  // finally update the GLWindow and re-draw
-  // if (isExposed())
-
   update();
 }
 
@@ -267,7 +257,7 @@ void NGLScene::keyReleaseEvent(QKeyEvent *_event)
 
 void NGLScene::timerEvent(QTimerEvent *_event)
 {
-  auto timeStep = 1.0f / 300.0f;
+  auto timeStep = 1.0f / 100.0f;
   int32 velocityIterations = 6;
   int32 positionIterations = 2;
   m_world->Step(timeStep, velocityIterations, positionIterations);

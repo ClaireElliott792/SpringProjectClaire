@@ -1,11 +1,12 @@
 /****************************************************************************
-basic OpenGL demo modified from http://qt-project.org/doc/qt-5.0/qtgui/openglwindow.html
+basic OpenGL box2d spring system project 
+modified from :-
+http://qt-project.org/doc/qt-5.0/qtgui/openglwindow.html 
+Macey, J. (2022) 'NCCA/Box2D', published on github. https://github.com/NCCA/Box2D Accessed on May 2023.
 ****************************************************************************/
 #include <QtGui/QGuiApplication>
 #include <iostream>
 #include "NGLScene.h"
-
-
 
 int main(int argc, char **argv)
 {
@@ -29,6 +30,3 @@ int main(int argc, char **argv)
 
   return app.exec();
 }
-
-
-
