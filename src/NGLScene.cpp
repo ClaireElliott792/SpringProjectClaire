@@ -20,7 +20,6 @@ NGLScene::NGLScene()
 
 NGLScene::~NGLScene()
 {
-  std::cout << "Shutting down NGL, removing VAO's and Shaders\n";
 }
 
 void NGLScene::resizeGL(int _w, int _h)
@@ -51,21 +50,12 @@ void NGLScene::initializeGL()
   b2Vec2 gravity(0.0f, -20.0f);
   m_world.reset(new b2World(gravity));
 
-  // float springAngle;
-  // int springCompression;
-
-  // std::cout << "Spring angle?" << std::endl;
-  // std::cin >> springAngle;
-  // std::cout << "Spring compression?" << std::endl;
-  // std::cin >> springCompression;
-
   //ground
   b2BodyDef groundBodyDef;
   groundBodyDef.angularDamping = 0.3f;
   groundBodyDef.position.Set(0.0f, -20.0f);
   b2Body *groundBody = m_world->CreateBody(&groundBodyDef);
   b2PolygonShape groundBox;
-  // groundBox.filter.categoryBits = CATEGORY_GROUND;
   groundBox.SetAsBox(80.0f, 2.0f);
   groundBody->CreateFixture(&groundBox, 0.0f);
 
@@ -93,33 +83,18 @@ void NGLScene::initializeGL()
   bodyDef.type = b2_dynamicBody;
   bodyDef.position.Set(-36.5f, -15.5f);
   m_body = m_world->CreateBody(&bodyDef);
-
-  // int force = springCompression * 10;
-  // std::cout << angle << std::endl;
-  // float x_force = fabs(force * cos(angle));
-  // float y_force = fabs(force * sin(angle));
-
-  // std::cout << x_force << std::endl;
-  // std::cout << y_force << std::endl;
-
-  // m_body->SetLinearVelocity(b2Vec2(x_force, y_force));
   m_body->SetLinearDamping(0.1f);
   m_body->SetAngularVelocity(0);
   m_body->SetFixedRotation(false);
 
   b2CircleShape dynamicBox;
-  // dynamicBox.m_p.Set(1.0f, 1.0f);
   dynamicBox.m_radius = 0.5f;
   b2FixtureDef fixtureDef2;
   fixtureDef2.shape = &dynamicBox;
   fixtureDef2.density = 0.3f;
   fixtureDef2.friction = 0.3f;
   fixtureDef2.restitution = 0.7f;
-  // fixtureDef2.filter.categoryBits = CATEGORY_BALL;
-  // fixtureDef2.filter.maskBits = 0;
   m_body->CreateFixture(&fixtureDef2);
-
-  // startTimer(10);
 }
 
 void NGLScene::loadMatricesToShader()
@@ -209,8 +184,6 @@ void NGLScene::keyPressEvent(QKeyEvent *_event)
   float x_force;
   float y_force;
 
-  // this method is called every time the main window recives a key event.
-  // we then switch on the key value and set the camera in the GLWindow
   switch (_event->key())
   {
   // escape key to quite
@@ -253,41 +226,25 @@ void NGLScene::keyPressEvent(QKeyEvent *_event)
   case Qt::Key_Up:
     x = m_body->GetPosition().x + fabs(0.1 * cos(angle));
     y = m_body->GetPosition().y + fabs(0.1 * sin(angle));
-    // std::cout << y << std::endl;
-    if (y < -14.5)
+    if (y < -12)
       m_body->SetTransform(b2Vec2(x, y), angle);
     break;
   case Qt::Key_Down:
     x = m_body->GetPosition().x - fabs(0.1 * cos(angle));
     y = m_body->GetPosition().y - fabs(0.1 * sin(angle));
-    if (y > -17.5)
+    if (y > -15.5)
       m_body->SetTransform(b2Vec2(x, y), angle);
-    break;
-  // turn on wirframe rendering
-  case Qt::Key_W:
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-    break;
-  // turn off wire frame
-  case Qt::Key_S:
-    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     break;
   // show full screen
   case Qt::Key_F:
     showFullScreen();
     break;
-  // show windowed
-  case Qt::Key_N:
-    showNormal();
-    break;
 
   case Qt::Key_P:
-    spring_compression = 20 + m_body->GetPosition().y;
+    spring_compression = fabs(m_body->GetPosition().y + 12);
 
     x_force = spring_compression * cos(angle) * 10;
     y_force = spring_compression * sin(angle) * 10;
-
-    std::cout << x_force << std::endl;
-    std::cout << y_force << std::endl;
 
     m_body->SetLinearVelocity(b2Vec2(x_force, y_force));
 
@@ -314,13 +271,7 @@ void NGLScene::timerEvent(QTimerEvent *_event)
   int32 velocityIterations = 6;
   int32 positionIterations = 2;
   m_world->Step(timeStep, velocityIterations, positionIterations);
-  // process all the key presses
   b2Vec2 move(0.0f, 0.0f);
-
-  // std::cout << m_body->GetPosition().x << std::endl;
-  // std::cout << m_body->GetWorldCenter().x << std::endl;
-  // std::cout << m_body->GetPosition().y << std::endl;
-  // std::cout << m_body->GetWorldCenter().y << std::endl;
 
   m_body->ApplyForce(move, m_body->GetWorldCenter(), true);
 
